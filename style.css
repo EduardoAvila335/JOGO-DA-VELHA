@@ -1,0 +1,46 @@
+main{
+    text-align: center;
+}
+
+
+h1{
+    animation: brilho 4s infinite ease-out;
+    color: rgb(68, 68, 40);
+    font-style: italic;
+}
+
+@keyframes brilho{
+    0%,100%{
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+        transform: scale(1);
+    }
+    50%{
+        text-shadow: 0 0 10px rgb(133, 133, 133);
+        transform: scale(1.1);
+    }
+}
+
+
+div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px auto;
+    width: 330px;
+}
+
+button{
+    padding: 50px;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+#Reiniciar{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(201, 201, 201);
+}
